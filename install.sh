@@ -48,10 +48,10 @@ if $DRY_RUN; then
 fi
 echo ""
 
-# # ── Check GIMP is not running ──────────────────────────────────────────────────
-# if pgrep -x gimp &>/dev/null || pgrep -f "org.gimp.GIMP" &>/dev/null; then
-#     die "GIMP is running. Close GIMP first, then run this installer.\n  (GIMP overwrites gimprc on exit and would undo the installation.)"
-# fi
+# ── Check GIMP is not running ──────────────────────────────────────────────────
+if pgrep -x "gimp" &>/dev/null || pgrep -xf "gimp-[0-9]" &>/dev/null || pgrep -f "org.gimp.GIMP" &>/dev/null; then
+    die "GIMP is running. Close GIMP first, then run this installer.\n  (GIMP overwrites shortcutsrc and gimprc on exit, undoing the installation.)"
+fi
 
 # ── Detect OS ──────────────────────────────────────────────────────────────────
 case "$(uname -s)" in
