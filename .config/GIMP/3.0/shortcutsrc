@@ -5,6 +5,20 @@
 (file-version 1)
 
 # NEW
+(action "photogimp-set-opacity-1" "1")
+(action "photogimp-set-opacity-2" "2")
+(action "photogimp-set-opacity-3" "3")
+(action "photogimp-set-opacity-4" "4")
+(action "photogimp-set-opacity-5" "5")
+(action "photogimp-set-opacity-6" "6")
+(action "photogimp-set-opacity-7" "7")
+(action "photogimp-set-opacity-8" "8")
+(action "photogimp-set-opacity-9" "9")
+(action "photogimp-set-opacity-0" "0")
+(action "photogimp-view-channel-composite" "<Primary>asciitilde")
+(action "photogimp-view-channel-red"       "<Primary>1")
+(action "photogimp-view-channel-green"     "<Primary>2")
+(action "photogimp-view-channel-blue"      "<Primary>3")
 (action "layers-duplicate" "<Primary>j")
 (action "tools-rect-select" "m")
 (action "tools-dodge-burn" "o")
@@ -12,6 +26,12 @@
 (action "view-fullscreen" "f")
 (action "tools-bucket-fill" "<Shift>g")
 (action "tools-convolve" "<Shift>r")
+(action "tools-gradient" "g")
+(action "tools-text" "t")
+(action "tools-path" "p")
+(action "tools-zoom" "z")
+(action "context-colors-default" "d")
+(action "context-colors-swap" "x")
 
 (action "tools-cage")
 (action "file-open-recent-10")
@@ -19,6 +39,11 @@
 (action "tools-rotate")
 
 # CHANGED
+(action "layers-alpha-selection-replace" "<Primary><Alt>a")
+(action "layers-new-group" "<Primary>g")
+(action "layers-merge-group" "<Primary><Shift>g")
+(action "view-zoom-in" "<Primary>equal")
+(action "view-zoom-out" "<Primary>minus")
 (action "edit-fill-fg" "<Alt>BackSpace")
 (action "edit-fill-bg" "<Primary>BackSpace")
 (action "view-zoom-fit-in" "<Primary>0")
@@ -27,6 +52,7 @@
 (action "tools-unified-transform" "<Primary>t")
 (action "tools-ellipse-select" "<Shift>m")
 (action "image-merge-layers" "<Primary>e")
+(action "quick-mask-toggle" "q")
 
 # UNCHANGED
 (action "image-resize" "<Primary><Alt>c")
@@ -50,7 +76,6 @@
 
 (action "tools-size-decrease-skip")
 (action "tools-warp")
-(action "tools-vector")
 (action "tools-size-increase-skip")
 (action "view-show-selection")
 (action "tools-airbrush")
