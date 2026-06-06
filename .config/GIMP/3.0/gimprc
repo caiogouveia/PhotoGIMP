@@ -8,6 +8,9 @@
 
 (language "")
 (config-version "3.0.0")
+(theme "Default")
+(prefer-dark-theme yes)
+(icon-size small)
 (undo-levels 8)
 (undo-preview-size medium)
 (layer-preview-size extra-large)
